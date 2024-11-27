@@ -8,6 +8,8 @@ export class RideController {
 
   @Post('estimate')
   createEstimate(@Body() obj: EstimateRouteInput): string {
+    const resRoute = this.teste.findRoute(obj);
+    console.log(`resRoute: ${resRoute}`);
     return 'estimativa';
   }
 }
