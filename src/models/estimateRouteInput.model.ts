@@ -1,7 +1,7 @@
 import { IsNotEmpty, IsString, MinLength } from 'class-validator';
 import { IsDifferent } from 'src/validators/is-different.decorator';
 
-export class Payload {
+export class EstimateRouteInput {
   @IsNotEmpty()
   @IsString()
   @MinLength(3)
