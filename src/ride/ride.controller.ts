@@ -6,4 +6,8 @@ import { Payload } from 'src/models';
 export class RideController {
   constructor(private readonly teste: AppService) {}
 
+  @Post('estimate')
+  createEstimate(@Body() obj: Payload): string {
+    return 'estimativa';
+  }
 }
